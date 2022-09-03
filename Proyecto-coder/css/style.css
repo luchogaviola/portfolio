@@ -51,13 +51,6 @@
 .navLink {
     color: black;
     text-decoration: none;
-    transition: all 0.34s linear;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-}
-
-.navLink:hover {
-    background-color: #c4c4c4;
 }
 
 .nav__toggle {
@@ -196,12 +189,6 @@
     flex-flow: column;
     align-items: center;
     height: 14vh;
-}
-
-.iconSkill:hover {
-    width: 5.5rem;
-    height: 5.5rem;
-    transition: all 0.4s;
 }
 
 .iconSkill {
