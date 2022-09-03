@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Portafolio</title>
+    <link rel="icon" type="image/png" href="../icons/React.png">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="fondo">
+    <header class="header">
+        <nav class="navBar">
+            <img class="logo-lg" src="../icons/logo-lg.png" alt="logo de LG">
+            <ul class="navList ">
+                <li class="navItem"><a class="navLink" href="../index.html">Inicio</a></li>
+                <li class="navItem"><a class="navLink" href="./acerca-de-mi.html">Acerca de mi</a></li>
+                <li class="navItem"><a class="navLink" href="./proyectos.html">Proyectos</a></li>
+                <li class="navItem"><a class="navLink" href="./experiencia.html">Experiencia</a></li>
+                <li class="navItem"><a class="navLink" href="./contacto.html">Contacto</a></li>
+            </ul>
+            <input type="checkbox" id="check">
+            <label for="check" class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+    </header>
+
+    <main class="main__contact">
+        <h1 class="title__contacto">Contacto:</h1>
+        <form class="main__form">
+            <fieldset class="main__fieldset">
+                <div class="fieldset__nombre">
+                    <label class="label__contenido" for="nombre">Nombre:</label>
+                    <input class="input__nombre" type="text" name="nombre" placeholder="Ariel Rodriguez">
+                </div>
+                <div class="fieldset__email">
+                    <label class="label__contenido" for="correo">Mail:</label>
+                    <input class="input__email" type="email" name="correo" placeholder="email@example.com">
+                </div>
+                <div class="fieldset__texto">
+                    <label class="label__contenido" for="mensaje">Mensaje:</label>
+                    <textarea class="input__texto" name="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <input class="fieldset__enviar-msj" type="submit" value="Enviar mensaje">
+            </fieldset>
+        </form>
+        <div class="main__celu">
+            <img class="main__img" src="../icons/celu.png" alt="celular">
+        </div>
+    </main>
+
+    <footer class="mainFoot">
+        <p class="mainFoot__par">Desarrollado y diseñado por Luciano Gaviola ©2022. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
