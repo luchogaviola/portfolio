@@ -39,6 +39,7 @@
     display: flex;
     align-items: center;
     list-style: none;
+    margin: 0;
 }
 
 .navItem {
@@ -100,7 +101,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 61.3%;
+    height: 60.1%;
 }
 
 .perfil {
@@ -112,13 +113,12 @@
 }
 
 .titulo-principal {
-    font-family: 'Roboto', sans-serif;
-    font-size: 4.2rem;
+    font-size: 3.8rem;
     font-weight: 750;
 }
 
 .subtitulo {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 550;
 }
 
@@ -150,7 +150,7 @@
 
 .main__title {
     font-weight: bold;
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     text-align: left;
     height: 65px;
     padding-left: 140px;
@@ -158,7 +158,7 @@
 
 .main__parrafo {
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: left;
     line-height: 2;
     width: 31rem;
@@ -363,7 +363,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    height: 339px;
+    height: 353px;
 }
 
 .div__img-coder {
@@ -387,7 +387,7 @@
 .main__contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
     grid-template-areas:
         "contacto    contacto"
         "formulario  celu";
@@ -396,83 +396,119 @@
     justify-items: center;
 }
 
-.main__form {
-    display: grid;
-    text-align: left;
-    grid-area: formulario;
-}
-
 .title__contacto {
     font-weight: bold;
-    font-size: 3.2rem;
+    font-size: 3rem;
     align-self: center;
     grid-area: contacto;
 }
 
-.main__fieldset {
+.card {
+    display: grid;
+    width: 325px;
+    height: 490px;
+    background: rgba(178, 180, 184, 0.418);
+    border: 1px solid white;
+    grid-area: formulario;
+}
+
+.redes-container {
     display: flex;
-    flex-flow: row wrap;
-    align-content: space-around;
-    align-self: center;
-    width: 300px;
-    height: 450px;
-    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    
+}
+
+.redes-container ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.redes-container ul li a{
+    display: block;
+    color: black;
+    background: #f3f1ed;
+    padding: 0 15px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.linkedin:hover {
+    font-size: 28px;
+    color: #0077B5;
+    transition: all 0.3s ease-in;
+} 
+
+.twitter:hover {
+    font-size: 28px;
+    color: #55acee;
+    transition: all 0.3s;
+} 
+
+.github:hover {
+    font-size: 28px;
+    color: #690092;
+    transition: all 0.3s;
+} 
+
+.form-outline {
+    padding-bottom: 20px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 14px;
+    background: #f3f1ed;
+    color: rgb(0, 0, 0);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
     border: none;
-}
-
-.fieldset__nombre {
-    align-self: flex-start;
-}
-
-.fieldset__email {
-    align-self: center;
-}
-
-.fieldset__texto {
-    align-self: flex-end;
-}
-
-.input__nombre {
-    width: 300px;
-    height: 35px;
-    font-size: 15px;
-}
-
-.input__email {
-    width: 300px;
-    height: 35px;
-    font-size: 15px;
-}
-
-.input__texto {
-    width: 300px;
-    height: 250px;
-    margin-bottom: 40px;
-    font-size: 15px;
-    min-height: 250px;
-    max-height: 250px;
-    min-width: 300px;
-    max-width: 300px;
-}
-
-.fieldset__enviar-msj {
-    align-self: flex-end;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    padding: 12px 0;
-    border-radius: 8px;
-    background-color: #bbbbbb;
-    cursor: pointer;
-
-}
-
-.label__contenido {
-    font-size: 1.5rem;
-    display: flex;
-    flex-flow: column;
-    align-items: left;
-}
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   }
+   
+   button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   button:hover span {
+    transform: translateX(5em);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+      
 
 .main__celu {
     align-self: center;
@@ -502,6 +538,7 @@
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
+    margin: 0;
 }
 
 
@@ -702,59 +739,51 @@
 -------1024px--------
 */
 
+.main__contact {
+    grid-template-rows: 0.3fr 1fr;
+}
 
     .title__contacto {
-        font-size: 2.9rem;
+        font-size: 2.8rem;
         align-self: center;
     }
 
-    .main__form {
-        padding-left: 19px;
+    .card {
+        width: 280px;
+        height: 470px;
     }
 
-    .main__fieldset {
-        width: 200px;
-        height: 350px;
+    .redes-container {
+        height: 7vh;
     }
 
-    .input__nombre {
-        width: 250px;
-        height: 30px;
+    .redes-container ul li a{
+        line-height: 40px;
         font-size: 13px;
     }
 
-    .input__email {
-        width: 250px;
-        height: 30px;
-        font-size: 13px;
+    button {
+        font-size: 12px;
+       }
+
+    .form-label {
+        font-size: 0.8rem;
     }
 
-    .input__texto {
-        width: 250px;
-        height: 30px;
-        font-size: 13px;
-        min-height: 200px;
-        max-height: 200px;
-        min-width: 250px;
-        max-width: 250px;
-    }
-
-
-    .label__contenido {
-        font-size: 1.5rem;
-        display: flex;
-        flex-flow: column;
-        align-items: left;
+    .form-outline {
+        padding-bottom: 20px;
     }
 
     .main__celu {
         align-self: center;
-        width: 500px;
+        width: 485px;
+        height: 420px;
         grid-area: celu;
     }
 
     .main__img {
-        width: 500px;
+        width: 485px;
+        height: 420px;
     }
 
 }
@@ -768,8 +797,8 @@
 */
 
     .navItem {
-        margin: 0.79rem;
-        font-size: 0.94rem;
+        margin: 0.76rem;
+        font-size: 0.89rem;
     }
 
     .logo-lg {
@@ -949,7 +978,7 @@
 
     .main__contact {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.2fr 1fr;
+        grid-template-rows: 0.3fr 1fr;
         grid-template-areas:
             "contacto contacto"
             "formulario formulario";
@@ -957,43 +986,6 @@
 
     .title__contacto {
         font-size: 2.9rem;
-        align-self: flex-end;
-    }
-
-    .main__form {
-        padding-left: 0;
-    }
-
-    .main__fieldset {
-        width: 200px;
-        height: 350px;
-    }
-
-    .input__nombre {
-        width: 250px;
-        height: 30px;
-        font-size: 13px;
-    }
-
-    .input__email {
-        width: 250px;
-        height: 30px;
-        font-size: 13px;
-    }
-
-    .input__texto {
-        width: 250px;
-        height: 30px;
-        font-size: 13px;
-        min-height: 200px;
-        max-height: 200px;
-        min-width: 250px;
-        max-width: 250px;
-    }
-
-
-    .label__contenido {
-        font-size: 1.5rem;
     }
 
     .main__celu {
@@ -1236,14 +1228,13 @@
 */
 
     .title__contacto {
-        font-size: 2.5rem;
-        align-self: flex-end;
+        font-size: 2.6rem;
     }
 
     /* 
 ---------------------
 -------Footer--------
---------600px--------
+--------320px--------
 */
 
     .mainFoot__par {

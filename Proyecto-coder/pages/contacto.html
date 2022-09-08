@@ -31,24 +31,55 @@
     </header>
 
     <main class="main__contact">
-        <h1 class="title__contacto">Contacto:</h1>
-        <form class="main__form">
-            <fieldset class="main__fieldset">
-                <div class="fieldset__nombre">
-                    <label class="label__contenido" for="nombre">Nombre:</label>
-                    <input class="input__nombre" type="text" name="nombre" placeholder="Ariel Rodriguez">
+        <h1 class="title__contacto m-0">Contacto:</h1>
+        
+        <div class="card">
+            <div class="card-body">
+                <div class="redes-container">
+                    <ul class="m-0 p-0">
+                        <li><a href="https://linkedin.com/in/luchogaviola" class="linkedin"> <i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://twitter.com/LuchoGaviola" class="twitter"> <i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/luchogaviola/portfolio" class="github"> <i class="fab fa-github"></i></a></li>
+                    </ul>
                 </div>
-                <div class="fieldset__email">
-                    <label class="label__contenido" for="correo">Mail:</label>
-                    <input class="input__email" type="email" name="correo" placeholder="email@example.com">
-                </div>
-                <div class="fieldset__texto">
-                    <label class="label__contenido" for="mensaje">Mensaje:</label>
-                    <textarea class="input__texto" name="mensaje" cols="30" rows="10"></textarea>
-                </div>
-                <input class="fieldset__enviar-msj" type="submit" value="Enviar mensaje">
-            </fieldset>
-        </form>
+                <form>
+                    <!-- Nombre input -->
+                    <div class="form-outline">
+                      <label class="form-label" for="form4Example1">Nombre:</label>
+                      <input type="text" id="form4Example1" class="form-control" />
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div class="form-outline">
+                      <label class="form-label" for="form4Example2">Email:</label>
+                      <input type="email" id="form4Example2" class="form-control" />
+                      
+                    </div>
+                  
+                    <!-- Mensaje input -->
+                    <div class="form-outline">
+                    <label class="form-label" for="form4Example3">Mensaje:</label>
+                      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                      
+                    </div>
+                  
+                    <!-- Submit button -->
+                    <button>
+                        <div class="svg-wrapper-1">
+                          <div class="svg-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <span>Enviar</span>
+                      </button>
+                  </form>
+            </div>
+
+        </div>
+
         <div class="main__celu">
             <img class="main__img" src="../icons/celu.png" alt="celular">
         </div>
