@@ -27,8 +27,7 @@
     top: 0;
     width: 100%;
     height: 11vh;
-
-
+    z-index: 1;
 }
 
 .logo-lg {
@@ -166,6 +165,27 @@
     padding-left: 140px;
 }
 
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 17px 0 0 140px;
+   }
+
+.div__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: #242a35;
+   }
+
 .main__titleSkill {
     font-weight: bold;
     font-size: 2.7rem;
@@ -200,12 +220,12 @@
 .iconSkill:hover {
     width: 5.5rem;
     height: 5.5rem;
-    transition: all 0.4s;
 } 
 
 .iconSkill {
     width: 5rem;
     height: 5rem;
+    transition: all 0.4s;
 }
 
 .nick__icon {
@@ -410,6 +430,7 @@
     background: rgba(178, 180, 184, 0.418);
     border: 1px solid white;
     grid-area: formulario;
+    z-index: 0;
 }
 
 .redes-container {
@@ -434,22 +455,32 @@
     font-size: 18px;
 }
 
+.linkedin {
+    transition: all 0.3s;
+}
+
 .linkedin:hover {
     font-size: 28px;
     color: #0077B5;
-    transition: all 0.3s ease-in;
+    
 } 
+
+.twitter {
+    transition: all 0.3s;
+}
 
 .twitter:hover {
     font-size: 28px;
     color: #55acee;
-    transition: all 0.3s;
 } 
+
+.github {
+    transition: all 0.3s;
+}
 
 .github:hover {
     font-size: 28px;
     color: #690092;
-    transition: all 0.3s;
 } 
 
 .form-outline {
@@ -610,6 +641,10 @@ button {
         width: 25rem;
         padding-left: 60px;
     }
+
+    .download-button {
+        padding-left: 60px;
+       }
 
     .main__titleSkill {
         font-size: 2.2rem;
@@ -831,6 +866,14 @@ button {
     height: 60vh;
     gap: 0px;
 }
+
+.download-button {
+    font-size: 12px;
+   }
+
+.docs {
+    min-height: 32px;
+   }
 
 .sectionIcon {
     height: 79vh;
@@ -1068,6 +1111,15 @@ button {
         height: 79vh;
     }
 
+    .download-button {
+        font-size: 10px;
+        padding-top: 5px;
+       }
+    
+    .docs {
+        min-height: 30px;
+       }
+
     .iconSkill {
         width: 3.2rem;
         height: 3.2rem;
@@ -1142,17 +1194,28 @@ button {
         margin: 0;
     }
 
+    .download-button {
+        font-size: 9px;
+        padding: 5px 0 0 0;
+        align-self: center;
+       }
+    
+    .docs {
+        min-height: 28px;
+       }
 
     .main__title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         height: 40px;
-        padding-left: 45px;
+        text-align: center;
+        padding: 0px;
     }
 
     .main__parrafo {
         font-size: 0.8rem;
-        width: 99%;
-        padding-left: 45px;
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
     }
 
     .main__titleSkill {
@@ -1219,6 +1282,26 @@ button {
 
     .div__icons {
         height: 20vh;
+    }
+
+    .download-button {
+        font-size: 10px;
+        padding-top: 20px;
+       }
+
+    .main__title {
+        font-size: 1.2rem;
+        height: 40px;
+        padding: 0 10px;
+        
+
+    }
+
+    .main__parrafo {
+        font-size: 0.7rem;
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;
     }
 
     /* 
