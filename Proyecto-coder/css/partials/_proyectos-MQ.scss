@@ -87,6 +87,7 @@
         .section__proyectos {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2, 1fr);
+            gap: 0px;
     
             .div__calcu {
                 height: 26vh;
@@ -124,7 +125,7 @@
                 }
     
                 .section__textoCalcu {
-    
+
                     .clima__nick {
                         font-size: 1.6rem;
                     }

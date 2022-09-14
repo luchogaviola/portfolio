@@ -130,7 +130,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 93%;
+  height: 100%;
 }
 .main__Acerca-de-mi .section__sobre-mi .main__title {
   font-weight: bold;
@@ -434,7 +434,7 @@ button:active {
 .main__contact .card {
   display: grid;
   width: 325px;
-  height: 490px;
+  height: 470px;
   background: rgba(178, 180, 184, 0.418);
   border: 1px solid white;
   grid-area: formulario;
@@ -448,7 +448,7 @@ button:active {
 }
 .main__contact .card .card-body .redes-container ul li {
   display: inline-block;
-  padding: 15px;
+  padding: 15px 15px 20px 15px;
 }
 .main__contact .card .card-body .redes-container ul li a {
   display: block;
@@ -480,7 +480,7 @@ button:active {
   color: #690092;
 }
 .main__contact .card .card-body .form-outline {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .main__contact .card .card-body button {
   font-family: inherit;
@@ -639,7 +639,7 @@ button:active {
   -------Index-768px------
   */
   .indexMain .mainSect .titleMain {
-    height: 50%;
+    height: 40%;
   }
   .indexMain .mainSect .perfil {
     height: 50%;
@@ -954,6 +954,7 @@ button:active {
   .main__Proyectos .section__proyectos {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
   }
   .main__Proyectos .section__proyectos .div__calcu {
     height: 26vh;
@@ -1073,7 +1074,7 @@ button:active {
   }
   .main__contact .card {
     width: 280px;
-    height: 470px;
+    height: 422px;
   }
   .main__contact .card .card-body .redes-container {
     height: 7vh;
@@ -1083,7 +1084,7 @@ button:active {
     font-size: 13px;
   }
   .main__contact .card .card-body .form-outline {
-    padding-bottom: 20px;
+    padding-bottom: 7px;
   }
   .main__contact .card .card-body .form-outline .form-label {
     font-size: 0.8rem;
@@ -1108,7 +1109,7 @@ button:active {
   */
   .main__contact {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr;
+    grid-template-rows: 0.7fr 1fr;
     grid-template-areas: "contacto contacto" "formulario formulario";
   }
   .main__contact .title__contacto {

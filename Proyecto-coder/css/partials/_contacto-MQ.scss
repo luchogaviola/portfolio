@@ -14,7 +14,7 @@
 
         .card {
            width: 280px;
-           height: 470px;
+           height: 422px;
 
            .card-body {
 
@@ -28,7 +28,7 @@
             }
 
             .form-outline {
-                padding-bottom: 20px;
+                padding-bottom: 7px;
 
                 .form-label {
                     font-size: 0.8rem;
@@ -63,7 +63,7 @@
 
     .main__contact {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.3fr 1fr;
+        grid-template-rows: 0.7fr 1fr;
         grid-template-areas:
             "contacto contacto"
             "formulario formulario";
