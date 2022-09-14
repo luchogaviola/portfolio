@@ -1,0 +1,69 @@
+/* 
+---------------------
+-----Experiencia-----
+---------------------
+*/
+
+.main__experiencia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 75%;
+    align-items: center;
+    justify-items: center;
+    height: 79vh;
+
+    .title__experiencia {
+        font-weight: bold;
+        font-size: 3rem;
+        align-self: center;
+    }
+
+    .main__section {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: auto;
+        gap: 100px;
+        font-family: $fontRoboto;
+
+        .section__div-unlam {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .div__img-unlam {
+                width: 380px;
+                height: 280px;
+                text-align: center;
+            }
+            
+            .div__p-unlam {
+                width: 250px;
+                text-align: center;
+                line-height: 23px;
+                font-size: 15.9px;
+                margin-top: 12px;
+            }
+        }
+
+        .section__div-coder {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            height: 353px;
+
+            .div__img-coder {
+                width: 380px;
+                height: 280px;
+            }
+            
+            .div__p-coder {
+                text-align: center;
+                font-size: 17.3px;
+                margin-top: 12px;
+            }
+        }
+    }
+}

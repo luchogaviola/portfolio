@@ -1,0 +1,1152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+---------------------
+-------Header--------
+---------------------
+*/
+.fondo {
+  background-color: #f3f1ed;
+}
+.fondo .header {
+  background-color: #B3B1AF;
+  height: 11vh;
+  width: 100%;
+}
+.fondo .header .nav__toggle, .fondo .header .input__toggle {
+  display: none;
+}
+.fondo .header .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 11vh;
+  z-index: 1;
+}
+.fondo .header .navBar .logo-lg {
+  padding-left: 6.25rem;
+}
+.fondo .header .navBar .navList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+.fondo .header .navBar .navList .navItem {
+  margin: 4px;
+  font-size: medium;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.fondo .header .navBar .navList .navLink {
+  color: black;
+  text-decoration: none;
+  transition: all 0.34s linear;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.fondo .header .navBar .navList .navLink:hover {
+  background-color: #c4c4c4;
+}
+.fondo .header .navBar .nav__toggle {
+  color: white;
+  border: none;
+  font-size: 30px;
+  align-self: center;
+  padding: 0 28px;
+  cursor: pointer;
+}
+
+/* 
+---------------------
+-------Footer--------
+---------------------
+*/
+.mainFoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+  height: 10vh;
+}
+.mainFoot .mainFoot__par {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+/*
+-------Hero's--------
+*/
+.indexMain {
+  height: 79vh;
+}
+.indexMain .mainSect .titleMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.indexMain .mainSect .titleMain .titulo-principal {
+  font-size: 3.8rem;
+  font-weight: 750;
+}
+.indexMain .mainSect .titleMain .subtitulo {
+  font-size: 2rem;
+  font-weight: 550;
+}
+.indexMain .mainSect .perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 77vh;
+}
+.indexMain .mainSect .perfil .mainImg {
+  height: 63%;
+  width: auto;
+}
+
+/* 
+---------------------
+-----Acerca de mi----
+---------------------
+*/
+.main__Acerca-de-mi {
+  height: 79vh;
+}
+.main__Acerca-de-mi .section__sobre-mi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 93%;
+}
+.main__Acerca-de-mi .section__sobre-mi .main__title {
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-align: left;
+  height: 65px;
+  padding-left: 140px;
+}
+.main__Acerca-de-mi .section__sobre-mi .main__parrafo {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 2;
+  width: 31rem;
+  color: rgb(92, 92, 92);
+  padding-left: 140px;
+}
+.main__Acerca-de-mi .section__sobre-mi .download-button {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 17px 0 0 140px;
+}
+.main__Acerca-de-mi .section__sobre-mi .download-button .div__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  background-color: #242a35;
+}
+.main__Acerca-de-mi .sectionIcon {
+  display: grid;
+  grid-template-rows: 0.35fr 1fr;
+  height: 93%;
+}
+.main__Acerca-de-mi .sectionIcon .main__titleSkill {
+  font-weight: bold;
+  font-size: 2.7rem;
+  text-align: center;
+  align-self: center;
+}
+.main__Acerca-de-mi .sectionIcon .div__icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 63%;
+  justify-self: center;
+  gap: 35px;
+}
+.main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 14vh;
+}
+.main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
+  width: 5rem;
+  height: 5rem;
+  transition: all 0.4s;
+}
+.main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill:hover {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .nick__icon {
+  font-size: 1.3rem;
+}
+
+button {
+  font-family: inherit;
+  font-size: 14px;
+  background: #f3f1ed;
+  color: rgb(0, 0, 0);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+          animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@-webkit-keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+/* 
+---------------------
+------Proyectos------
+---------------------
+*/
+.main__Proyectos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 80%;
+  align-items: center;
+  justify-items: center;
+  height: 79vh;
+}
+.main__Proyectos .main__title-proyect {
+  font-weight: bold;
+  font-size: 3rem;
+  align-self: center;
+  text-align: center;
+}
+.main__Proyectos .section__proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  width: 950px;
+  font-family: "Roboto", sans-serif;
+  gap: 50px;
+}
+.main__Proyectos .section__proyectos .div__calcu {
+  display: flex;
+  align-self: center;
+  width: 445px;
+}
+.main__Proyectos .section__proyectos .div__calcu .main__Calculadora {
+  width: 200px;
+  height: 400px;
+}
+.main__Proyectos .section__proyectos .div__calcu .section__textoCalcu {
+  height: 30vh;
+  padding-left: 25px;
+}
+.main__Proyectos .section__proyectos .div__calcu .section__textoCalcu .calculadora__nick {
+  font-weight: normal;
+  font-size: 2.2rem;
+  align-self: flex-end;
+  margin-top: 9px;
+}
+.main__Proyectos .section__proyectos .div__calcu .section__textoCalcu .calculadora__subtitle {
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+.main__Proyectos .section__proyectos .div__calcu .section__textoCalcu .calculadora__lenguages {
+  font-size: 1.2rem;
+  list-style: none;
+  margin-top: 10px;
+}
+.main__Proyectos .section__proyectos .div__clima {
+  display: flex;
+  align-self: center;
+  width: 445px;
+}
+.main__Proyectos .section__proyectos .div__clima .main__Clima {
+  width: 200px;
+  height: 400px;
+}
+.main__Proyectos .section__proyectos .div__clima .section__textoCalcu {
+  height: 38vh;
+  padding-left: 25px;
+}
+.main__Proyectos .section__proyectos .div__clima .section__textoCalcu .clima__nick {
+  font-weight: normal;
+  font-size: 2.2rem;
+  align-self: flex-end;
+  margin-top: 9px;
+}
+.main__Proyectos .section__proyectos .div__clima .section__textoCalcu .clima__subtitle {
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+.main__Proyectos .section__proyectos .div__clima .section__textoCalcu .clima__lenguages {
+  font-size: 1.2rem;
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* 
+---------------------
+-----Experiencia-----
+---------------------
+*/
+.main__experiencia {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+  align-items: center;
+  justify-items: center;
+  height: 79vh;
+}
+.main__experiencia .title__experiencia {
+  font-weight: bold;
+  font-size: 3rem;
+  align-self: center;
+}
+.main__experiencia .main__section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: auto;
+  gap: 100px;
+  font-family: "Roboto", sans-serif;
+}
+.main__experiencia .main__section .section__div-unlam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__experiencia .main__section .section__div-unlam .div__img-unlam {
+  width: 380px;
+  height: 280px;
+  text-align: center;
+}
+.main__experiencia .main__section .section__div-unlam .div__p-unlam {
+  width: 250px;
+  text-align: center;
+  line-height: 23px;
+  font-size: 15.9px;
+  margin-top: 12px;
+}
+.main__experiencia .main__section .section__div-coder {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 353px;
+}
+.main__experiencia .main__section .section__div-coder .div__img-coder {
+  width: 380px;
+  height: 280px;
+}
+.main__experiencia .main__section .section__div-coder .div__p-coder {
+  text-align: center;
+  font-size: 17.3px;
+  margin-top: 12px;
+}
+
+/* 
+---------------------
+------Contacto-------
+---------------------
+*/
+.main__contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr;
+  grid-template-areas: "contacto    contacto" "formulario  celu";
+  height: 79vh;
+  justify-content: space-around;
+  justify-items: center;
+}
+.main__contact .title__contacto {
+  font-weight: bold;
+  font-size: 3rem;
+  align-self: center;
+  grid-area: contacto;
+}
+.main__contact .card {
+  display: grid;
+  width: 325px;
+  height: 490px;
+  background: rgba(178, 180, 184, 0.418);
+  border: 1px solid white;
+  grid-area: formulario;
+  z-index: 0;
+}
+.main__contact .card .card-body .redes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9vh;
+}
+.main__contact .card .card-body .redes-container ul li {
+  display: inline-block;
+  padding: 15px;
+}
+.main__contact .card .card-body .redes-container ul li a {
+  display: block;
+  color: black;
+  background: #f3f1ed;
+  padding: 0 15px;
+  line-height: 50px;
+  font-size: 18px;
+}
+.main__contact .card .card-body .redes-container .linkedin {
+  transition: all 0.3s;
+}
+.main__contact .card .card-body .redes-container .linkedin:hover {
+  font-size: 28px;
+  color: #0077B5;
+}
+.main__contact .card .card-body .redes-container .twitter {
+  transition: all 0.3s;
+}
+.main__contact .card .card-body .redes-container .twitter:hover {
+  font-size: 28px;
+  color: #55acee;
+}
+.main__contact .card .card-body .redes-container .github {
+  transition: all 0.3s;
+}
+.main__contact .card .card-body .redes-container .github:hover {
+  font-size: 28px;
+  color: #690092;
+}
+.main__contact .card .card-body .form-outline {
+  padding-bottom: 20px;
+}
+.main__contact .card .card-body button {
+  font-family: inherit;
+  font-size: 14px;
+  background: #f3f1ed;
+  color: rgb(0, 0, 0);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.main__contact .card .card-body button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+.main__contact .card .card-body button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+.main__contact .card .card-body button:hover .svg-wrapper {
+  -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+          animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+.main__contact .card .card-body button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+.main__contact .card .card-body button:hover span {
+  transform: translateX(5em);
+}
+.main__contact .card .card-body button:active {
+  transform: scale(0.95);
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+.main__contact .main__celu {
+  align-self: center;
+  width: 580px;
+  grid-area: celu;
+}
+.main__contact .main__celu .main__img {
+  width: 580px;
+}
+
+/*
+-------Media-Querys--------
+*/
+@media (max-width: 1024px) {
+  /* 
+  -------Header--1024px------
+  */
+  .fondo .header .navBar .logo-lg {
+    padding-left: 4.375rem;
+  }
+}
+@media (max-width: 768px) {
+  /* 
+  -------Header--768px------
+  */
+  .fondo .header .navBar .logo-lg {
+    padding-left: 1.875rem;
+  }
+  .fondo .header .navBar .navList .navItem {
+    margin: 0.76rem;
+    font-size: 0.88rem;
+    margin: 0px;
+  }
+  .fondo .header .navBar .navList .navLink {
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 600px) {
+  /* 
+  -------Header--600px------
+  */
+  .fondo .header {
+    background-color: #B3B1AF;
+    height: 11vh;
+    width: 100%;
+  }
+  .fondo .header .navBar .logo-lg {
+    padding-left: 25px;
+  }
+  .fondo .header .navBar .navList {
+    position: fixed;
+    flex-direction: column;
+    margin: 0;
+    background-color: #2c3e50;
+    top: 11%;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    height: 89%;
+    overflow-y: auto;
+    transition: -webkit-clip-path 0.4s ease-in-out;
+    transition: clip-path 0.4s ease-in-out;
+    transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
+    left: 0;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+  }
+  .fondo .header .navBar .navList .navItem {
+    display: block;
+    margin: 3.6rem;
+    font-size: 1.4rem;
+  }
+  .fondo .header .navBar .navList .navLink {
+    color: black;
+  }
+  .fondo .header .navBar .navList .navLink:hover {
+    background: none;
+    color: #B3B1AF;
+  }
+  .fondo .header .navBar .nav__toggle {
+    display: block;
+    cursor: pointer;
+  }
+  .fondo .header #menu:checked ~ .navBar .navList {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+}
+@media (max-width: 1024px) {
+  /* 
+  -------Index-1024px------
+  */
+  .indexMain .mainSect .titleMain {
+    height: auto;
+  }
+  .indexMain .mainSect .titleMain .titulo-principal {
+    font-size: 3rem;
+    font-weight: 750;
+  }
+  .indexMain .mainSect .titleMain .subtitulo {
+    font-size: 2.2rem;
+    font-weight: 550;
+  }
+  .indexMain .mainSect .perfil .mainImg {
+    height: 50%;
+  }
+}
+@media (max-width: 768px) {
+  /* 
+  -------Index-768px------
+  */
+  .indexMain .mainSect .titleMain {
+    height: 50%;
+  }
+  .indexMain .mainSect .perfil {
+    height: 50%;
+  }
+  .indexMain .mainSect .perfil .mainImg {
+    height: 90%;
+  }
+}
+@media (max-width: 600px) {
+  /* 
+  -------Index-600px------
+  */
+  .indexMain .mainSect .titleMain .titulo-principal {
+    font-size: 2.2rem;
+  }
+  .indexMain .mainSect .titleMain .subtitulo {
+    font-size: 1.4rem;
+  }
+  .indexMain .mainSect .titleMain .perfil {
+    height: 100%;
+  }
+  .indexMain .mainSect .titleMain .perfil .mainImg {
+    height: 75%;
+  }
+}
+@media (max-width: 480px) {
+  /* 
+  -------Index-480px------
+  */
+  .indexMain .mainSect .titleMain .titulo-principal {
+    font-size: 2rem;
+  }
+  .indexMain .mainSect .titleMain .subtitulo {
+    font-size: 1.2rem;
+  }
+  .indexMain .mainSect .titleMain .perfil {
+    height: 100%;
+  }
+  .indexMain .mainSect .titleMain .perfil .mainImg {
+    height: 80%;
+  }
+}
+@media (max-width: 320px) {
+  /* 
+  -------Index-320px------
+  */
+  .indexMain .mainSect .perfil .mainImg {
+    height: 70%;
+  }
+}
+@media (max-width: 1024px) {
+  /* 
+  ----Acerca-de-mi---1024px----
+  */
+  .main__Acerca-de-mi .section__sobre-mi .main__title {
+    font-size: 2.2rem;
+    height: 60px;
+    padding-left: 60px;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
+    font-size: 1rem;
+    line-height: 2.5;
+    width: 25rem;
+    padding-left: 60px;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .download-button {
+    padding-left: 60px;
+  }
+  .main__Acerca-de-mi .sectionIcon {
+    height: 93%;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons {
+    width: 90%;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .nick__icon {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  /* 
+  ----Acerca-de-mi---768px----
+  */
+  .main__Acerca-de-mi .section__sobre-mi {
+    height: 79vh;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
+    width: 17rem;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .download-button {
+    font-size: 12px;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .docs {
+    min-height: 32px;
+  }
+  .main__Acerca-de-mi .sectionIcon {
+    grid-template-rows: 0.2fr 1fr;
+    height: 79vh;
+  }
+  .main__Acerca-de-mi .sectionIcon .main__titleSkill {
+    font-size: 1.95rem;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    gap: 0px;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons {
+    height: 10vh;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 0;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .nick__icon {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 600px) {
+  /* 
+  ----Acerca-de-mi---600px----
+  */
+  .main__Acerca-de-mi .section__sobre-mi {
+    width: 50%;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__title {
+    font-size: 2rem;
+    height: auto;
+    padding-left: 30px;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
+    width: 92%;
+    padding-left: 30px;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .download-button {
+    font-size: 10px;
+    padding-left: 30px;
+  }
+  .main__Acerca-de-mi .sectionIcon {
+    height: 79vh;
+    width: 50%;
+  }
+  .main__Acerca-de-mi .sectionIcon .main__titleSkill {
+    font-size: 2rem;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 60vh;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 0;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .nick__icon {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  /* 
+  ----Acerca-de-mi---480px----
+  */
+  .main__Acerca-de-mi {
+    height: 79vh;
+  }
+  .main__Acerca-de-mi .section__sobre-mi {
+    height: 40%;
+    width: 100%;
+    margin: 0;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__title {
+    font-size: 1.5rem;
+    height: 40px;
+    text-align: center;
+    padding: 0px;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .download-button {
+    font-size: 9px;
+    padding: 5px 0 0 0;
+    align-self: center;
+  }
+  .main__Acerca-de-mi .sectionIcon {
+    height: 60%;
+    width: 100%;
+    gap: 20px;
+  }
+  .main__Acerca-de-mi .sectionIcon .main__titleSkill {
+    font-size: 1.8rem;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 75%;
+    height: auto;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 320px) {
+  /* 
+  ----Acerca-de-mi---320px----
+  */
+  .main__Acerca-de-mi .section__sobre-mi {
+    height: 50%;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__title {
+    font-size: 1.2rem;
+    height: 40px;
+    padding: 0 10px;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
+    font-size: 0.7rem;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .download-button {
+    font-size: 10px;
+    padding-top: 20px;
+  }
+  .main__Acerca-de-mi .sectionIcon {
+    height: 50%;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons {
+    height: 20vh;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 0;
+  }
+}
+@media (max-width: 1024px) {
+  /* 
+  -------Proyectos-1024px------
+  */
+  .main__Proyectos .main__title-proyect {
+    font-size: 2.8rem;
+    align-self: flex-end;
+  }
+  .main__Proyectos .section__proyectos {
+    width: auto;
+    gap: 29px;
+  }
+  .main__Proyectos .section__proyectos .div__calcu {
+    width: 370px;
+  }
+  .main__Proyectos .section__proyectos .div__calcu .main__Calculadora {
+    width: 160px;
+    height: 300px;
+  }
+  .main__Proyectos .section__proyectos .div__calcu .section__textoCalcu {
+    height: 30vh;
+    padding-left: 20px;
+  }
+  .main__Proyectos .section__proyectos .div__calcu .section__textoCalcu .calculadora__nick {
+    font-size: 1.8rem;
+  }
+  .main__Proyectos .section__proyectos .div__calcu .section__textoCalcu .calculadora__subtitle {
+    margin-top: 25px;
+    font-size: 1.3rem;
+  }
+  .main__Proyectos .section__proyectos .div__calcu .section__textoCalcu .calculadora__lenguages {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .main__Proyectos .section__proyectos .div__clima {
+    width: 370px;
+  }
+  .main__Proyectos .section__proyectos .div__clima .main__Clima {
+    width: 160px;
+    height: 300px;
+  }
+  .main__Proyectos .section__proyectos .div__clima .section__textoCalcu {
+    height: 38vh;
+    padding-left: 20px;
+  }
+  .main__Proyectos .section__proyectos .div__clima .section__textoCalcu .clima__nick {
+    font-size: 1.8rem;
+  }
+  .main__Proyectos .section__proyectos .div__clima .section__textoCalcu .clima__subtitle {
+    margin-top: 25px;
+    font-size: 1.3rem;
+  }
+  .main__Proyectos .section__proyectos .div__clima .section__textoCalcu .clima__lenguages {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  /* 
+  -------Proyectos-768px------
+  */
+  .main__Proyectos .main__title-proyect {
+    font-size: 2.5rem;
+    align-self: center;
+  }
+  .main__Proyectos .section__proyectos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .main__Proyectos .section__proyectos .div__calcu {
+    height: 26vh;
+    width: 266px;
+  }
+  .main__Proyectos .section__proyectos .div__calcu .main__Calculadora {
+    width: 100px;
+    height: 180px;
+  }
+  .main__Proyectos .section__proyectos .div__calcu .section__textoCalcu .calculadora__nick {
+    font-size: 1.6rem;
+  }
+  .main__Proyectos .section__proyectos .div__calcu .section__textoCalcu .calculadora__subtitle {
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+  .main__Proyectos .section__proyectos .div__calcu .section__textoCalcu .calculadora__lenguages {
+    font-size: 0.8rem;
+  }
+  .main__Proyectos .section__proyectos .div__clima {
+    height: 30vh;
+    width: 266px;
+  }
+  .main__Proyectos .section__proyectos .div__clima .main__Clima {
+    width: 100px;
+    height: 180px;
+  }
+  .main__Proyectos .section__proyectos .div__clima .section__textoCalcu .clima__nick {
+    font-size: 1.6rem;
+  }
+  .main__Proyectos .section__proyectos .div__clima .section__textoCalcu .clima__subtitle {
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+  .main__Proyectos .section__proyectos .div__clima .section__textoCalcu .clima__lenguages {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1024px) {
+  /* 
+  -------Experiencia-1024px------
+  */
+  .main__experiencia .title__experiencia {
+    font-size: 3rem;
+    align-self: flex-end;
+  }
+  .main__experiencia .main__section {
+    width: auto;
+    gap: 80px;
+  }
+  .main__experiencia .main__section .section__div-unlam .div__img-unlam {
+    width: 320px;
+    height: 220px;
+  }
+  .main__experiencia .main__section .section__div-unlam .div__p-unlam {
+    width: 250px;
+    font-size: 15.9px;
+  }
+  .main__experiencia .main__section .section__div-coder {
+    height: 278px;
+  }
+  .main__experiencia .main__section .section__div-coder .div__img-coder {
+    width: 320px;
+    height: 220px;
+  }
+}
+@media (max-width: 768px) {
+  /* 
+  -------Experiencia-768px------
+  */
+  .main__experiencia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 85%;
+  }
+  .main__experiencia .title__experiencia {
+    font-size: 2.2rem;
+    align-self: flex-end;
+  }
+  .main__experiencia .main__section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+    gap: 60px;
+  }
+  .main__experiencia .main__section .section__div-unlam .div__img-unlam {
+    width: 220px;
+    height: 120px;
+  }
+  .main__experiencia .main__section .section__div-unlam .div__p-unlam {
+    font-size: 14px;
+  }
+  .main__experiencia .main__section .section__div-coder {
+    height: auto;
+  }
+  .main__experiencia .main__section .section__div-coder .div__img-coder {
+    width: 220px;
+    height: 120px;
+  }
+  .main__experiencia .main__section .section__div-coder .div__p-coder {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  /* 
+  -------Contacto-1024px------
+  */
+  .main__contact {
+    grid-template-rows: 0.3fr 1fr;
+  }
+  .main__contact .title__contacto {
+    font-size: 2.8rem;
+    align-self: center;
+  }
+  .main__contact .card {
+    width: 280px;
+    height: 470px;
+  }
+  .main__contact .card .card-body .redes-container {
+    height: 7vh;
+  }
+  .main__contact .card .card-body .redes-container ul li a {
+    line-height: 40px;
+    font-size: 13px;
+  }
+  .main__contact .card .card-body .form-outline {
+    padding-bottom: 20px;
+  }
+  .main__contact .card .card-body .form-outline .form-label {
+    font-size: 0.8rem;
+  }
+  .main__contact .card .card-body button {
+    font-size: 12px;
+  }
+  .main__contact .main__celu {
+    align-self: center;
+    width: 485px;
+    height: 420px;
+    grid-area: celu;
+  }
+  .main__contact .main__celu .main__img {
+    width: 485px;
+    height: 420px;
+  }
+}
+@media (max-width: 768px) {
+  /* 
+  -------Contacto-768px------
+  */
+  .main__contact {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: "contacto contacto" "formulario formulario";
+  }
+  .main__contact .title__contacto {
+    font-size: 2.9rem;
+  }
+  .main__contact .main__celu {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  /* 
+  -------Contacto-320px------
+  */
+  .main__contact .title__contacto {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 600px) {
+  /* 
+  -------Footer-600px-------
+  */
+  .mainFoot .mainFoot__par {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  /* 
+  -------Footer-480px-------
+  */
+  .mainFoot .mainFoot__par {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 320px) {
+  /* 
+  -------Footer-320px-------
+  */
+  .mainFoot .mainFoot__par {
+    font-size: 0.5rem;
+  }
+}/*# sourceMappingURL=estilo.css.map */

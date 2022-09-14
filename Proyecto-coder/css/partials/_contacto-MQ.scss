@@ -1,0 +1,93 @@
+@media (max-width: 1024px) {
+
+    /* 
+    -------Contacto-1024px------
+    */
+
+    .main__contact {
+        grid-template-rows: 0.3fr 1fr;
+
+        .title__contacto {
+            font-size: 2.8rem;
+            align-self: center;
+        }
+
+        .card {
+           width: 280px;
+           height: 470px;
+
+           .card-body {
+
+            .redes-container {
+                height: 7vh;
+
+                ul li a{
+                    line-height: 40px;
+                    font-size: 13px;
+                }
+            }
+
+            .form-outline {
+                padding-bottom: 20px;
+
+                .form-label {
+                    font-size: 0.8rem;
+                }
+            }
+
+            button {
+                font-size: 12px;
+               }
+           }
+        }
+
+        .main__celu {
+            align-self: center;
+            width: 485px;
+            height: 420px;
+            grid-area: celu;
+
+            .main__img {
+                width: 485px;
+                height: 420px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* 
+    -------Contacto-768px------
+    */
+
+    .main__contact {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr;
+        grid-template-areas:
+            "contacto contacto"
+            "formulario formulario";
+
+            .title__contacto {
+                font-size: 2.9rem;
+            }
+
+            .main__celu {
+                display: none;
+            }
+    }
+}
+
+@media (max-width: 320px) {
+
+    /* 
+    -------Contacto-320px------
+    */
+
+    .main__contact {
+
+            .title__contacto {
+                font-size: 2.6rem;
+            }
+    }
+}

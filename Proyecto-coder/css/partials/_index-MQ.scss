@@ -1,0 +1,128 @@
+@media (max-width: 1024px) {
+
+/* 
+-------Index-1024px------
+*/
+
+    .indexMain {
+
+        .mainSect {
+
+            .titleMain {
+                height: auto;
+
+                .titulo-principal {
+                    font-size: 3rem;
+                    font-weight: 750;
+                }
+    
+                .subtitulo {
+                    font-size: 2.2rem;
+                    font-weight: 550;
+                }
+            }
+
+            .perfil {
+                .mainImg {
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* 
+    -------Index-768px------
+    */
+
+    .indexMain {
+
+        .mainSect {
+            .titleMain{
+                height: 50%;
+            }
+
+            .perfil {
+                height: 50%;
+                .mainImg {
+                    height: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* 
+    -------Index-600px------
+    */
+        .indexMain {
+            .mainSect {
+                .titleMain {    
+                    .titulo-principal {
+                        font-size: 2.2rem;
+                    }
+    
+                    .subtitulo {
+                        font-size: 1.4rem;
+                    }
+    
+                    .perfil {
+                        height: 100%;
+    
+                        .mainImg {
+                         height: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+@media (max-width: 480px) {
+
+/* 
+-------Index-480px------
+*/
+    .indexMain {
+        .mainSect {
+            .titleMain {    
+                .titulo-principal {
+                    font-size: 2rem;
+                }
+
+                .subtitulo {
+                    font-size: 1.2rem;
+                }
+
+                .perfil {
+                    height: 100%;
+
+                    .mainImg {
+                     height: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 320px) {
+
+/* 
+-------Index-320px------
+*/
+.indexMain {
+    .mainSect { 
+            .perfil {
+                .mainImg {
+                 height: 70%;
+                }
+            }
+    }
+}
+}

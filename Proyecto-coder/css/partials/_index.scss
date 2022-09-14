@@ -1,0 +1,37 @@
+.indexMain {
+    height: 79vh;
+
+    .mainSect {
+
+        .titleMain {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .titulo-principal {
+                font-size: 3.8rem;
+                font-weight: 750;
+            }
+            
+            .subtitulo {
+                font-size: 2rem;
+                font-weight: 550;
+            }
+        }
+
+        .perfil {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 77vh;
+
+            .mainImg {
+                height: 63%;
+                width: auto;
+            }
+        }
+    }
+}

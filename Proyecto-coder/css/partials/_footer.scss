@@ -1,0 +1,20 @@
+/* 
+---------------------
+-------Footer--------
+---------------------
+*/
+
+.mainFoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $FooterColor;
+    height: 10vh;
+
+    .mainFoot__par {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+    }
+}

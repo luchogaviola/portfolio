@@ -1,0 +1,144 @@
+@media (max-width: 1024px) {
+/* 
+-------Proyectos-1024px------
+*/
+
+.main__Proyectos {
+
+    .main__title-proyect {
+        font-size: 2.8rem;
+        align-self: flex-end;
+    }
+
+    .section__proyectos {
+        width: auto;
+        gap: 29px;
+
+        .div__calcu {
+            width: 370px;
+
+            .main__Calculadora {
+                width: 160px;
+                height: 300px;
+            }
+        
+            .section__textoCalcu {
+                height: 30vh;
+                padding-left: 20px;
+
+                .calculadora__nick {
+                    font-size: 1.8rem;
+                }
+            
+                .calculadora__subtitle {
+                    margin-top: 25px;
+                    font-size: 1.3rem;
+                }
+            
+                .calculadora__lenguages {
+                    font-size: 1rem;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .div__clima {
+            width: 370px;
+
+            .main__Clima {
+                width: 160px;
+                height: 300px;
+            }
+
+            .section__textoCalcu {
+                height: 38vh;
+                padding-left: 20px;
+
+                .clima__nick {
+                    font-size: 1.8rem;
+                }
+            
+                .clima__subtitle {
+                    margin-top: 25px;
+                    font-size: 1.3rem;
+                }
+            
+                .clima__lenguages {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 768px) {
+    /* 
+    -------Proyectos-768px------
+    */
+
+    .main__Proyectos {
+
+        .main__title-proyect {
+            font-size: 2.5rem;
+            align-self: center;
+        }
+    
+        .section__proyectos {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+    
+            .div__calcu {
+                height: 26vh;
+                width: 266px;
+    
+                .main__Calculadora {
+                    width: 100px;
+                    height: 180px;
+                }
+            
+                .section__textoCalcu {
+    
+                    .calculadora__nick {
+                        font-size: 1.6rem;
+                    }
+                
+                    .calculadora__subtitle {
+                        margin-top: 15px;
+                        font-size: 1rem;
+                    }
+                
+                    .calculadora__lenguages {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+    
+            .div__clima {
+                height: 30vh;
+                width: 266px;
+    
+                .main__Clima {
+                    width: 100px;
+                    height: 180px;
+                }
+    
+                .section__textoCalcu {
+    
+                    .clima__nick {
+                        font-size: 1.6rem;
+                    }
+                
+                    .clima__subtitle {
+                        margin-top: 15px;
+                        font-size: 1rem;
+                    }
+                
+                    .clima__lenguages {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

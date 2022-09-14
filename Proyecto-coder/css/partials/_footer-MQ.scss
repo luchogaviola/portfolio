@@ -1,0 +1,32 @@
+@media (max-width: 600px) {
+/* 
+-------Footer-600px-------
+*/
+.mainFoot {
+    .mainFoot__par {
+        font-size: 0.8rem;
+    }
+}
+}
+
+@media (max-width: 480px) {
+/* 
+-------Footer-480px-------
+*/
+.mainFoot {
+    .mainFoot__par {
+        font-size: 0.6rem;
+    }
+}
+}
+
+@media (max-width: 320px) {
+/* 
+-------Footer-320px-------
+*/
+.mainFoot {
+    .mainFoot__par {
+        font-size: 0.5rem;
+    }
+}
+}

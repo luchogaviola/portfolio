@@ -1,0 +1,107 @@
+@media (max-width: 1024px) {
+
+    /* 
+    -------Header--1024px------
+    */
+        
+    .fondo {
+        .header {
+            .navBar {
+                .logo-lg {
+                    padding-left: 4.375rem;
+                }
+            }
+        }
+    }
+    
+}
+    
+    @media (max-width: 768px) {
+    
+    /* 
+    -------Header--768px------
+    */
+    
+    .fondo {
+        .header {
+            .navBar {
+                .logo-lg {
+                    padding-left: 1.875rem;
+                }
+
+                .navList {
+                    .navItem {
+                        margin: 0.76rem;
+                        font-size: 0.88rem;
+                        margin: 0px;
+                    }
+                
+                    .navLink {
+                        padding: 0.4rem 0.8rem;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+    }
+    
+    @media (max-width: 600px) {
+    
+    /* 
+    -------Header--600px------
+    */
+    
+    .fondo {
+        .header {
+            background-color: #B3B1AF;
+            height: 11vh;
+            width: 100%;
+
+            .navBar {
+                .logo-lg {
+                    padding-left: 25px;
+                }
+
+                .navList {
+                    position: fixed;
+                    flex-direction: column;
+                    margin: 0;
+                    background-color: #2c3e50;
+                    top: 11%;
+                    width: 100%;
+                    align-items: center;
+                    list-style: none;
+                    height: 89%;
+                    overflow-y: auto;
+                    transition: clip-path 0.4s ease-in-out;
+                    left: 0;
+                    clip-path: circle(0 at center);
+
+                    .navItem {
+                        display: block;
+                        margin: 3.6rem;
+                        font-size: 1.4rem;
+                    }
+                
+                    .navLink {
+                        color: black;
+
+                        &:hover {
+                            background: none;
+                            color: #B3B1AF;
+                        }
+                    }
+                }
+
+                .nav__toggle {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+            #menu:checked ~ .navBar .navList{
+                clip-path: circle(100% at center);
+            }
+        }
+    }
+}

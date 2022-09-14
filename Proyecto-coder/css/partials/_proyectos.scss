@@ -1,0 +1,98 @@
+/* 
+---------------------
+------Proyectos------
+---------------------
+*/
+
+.main__Proyectos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+    justify-items: center;
+    height: 79vh;
+
+    .main__title-proyect {
+        font-weight: bold;
+        font-size: 3rem;
+        align-self: center;
+        text-align: center;
+    }
+
+    .section__proyectos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        width: 950px;
+        font-family: $fontRoboto;
+        gap: 50px;
+
+        .div__calcu {
+            display: flex;
+            align-self: center;
+            width: 445px;
+
+            .main__Calculadora {
+                width: 200px;
+                height: 400px;
+            }
+            
+            .section__textoCalcu {
+                height: 30vh;
+                padding-left: 25px;
+
+                .calculadora__nick {
+                    font-weight: normal;
+                    font-size: 2.2rem;
+                    align-self: flex-end;
+                    margin-top: 9px;
+                }
+                
+                .calculadora__subtitle {
+                    margin-top: 25px;
+                    font-size: 1.5rem;
+                }
+                
+                .calculadora__lenguages {
+                    font-size: 1.2rem;
+                    list-style: none;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .div__clima {
+            display: flex;
+            align-self: center;
+            width: 445px;
+
+            .main__Clima {
+                width: 200px;
+                height: 400px;
+            }
+
+            .section__textoCalcu {
+                height: 38vh;
+                padding-left: 25px;
+
+                .clima__nick {
+                    font-weight: normal;
+                    font-size: 2.2rem;
+                    align-self: flex-end;
+                    margin-top: 9px;
+                }
+                
+                .clima__subtitle {
+                    margin-top: 25px;
+                    font-size: 1.5rem;
+                }
+                
+                .clima__lenguages {
+                    font-size: 1.2rem;
+                    list-style: none;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

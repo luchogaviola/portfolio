@@ -1,0 +1,269 @@
+@media (max-width: 1024px) {
+
+/* 
+----Acerca-de-mi---1024px----
+*/
+
+    .main__Acerca-de-mi {
+        .section__sobre-mi {
+            .main__title {
+                font-size: 2.2rem;
+                height: 60px;
+                padding-left: 60px;
+            }
+    
+            .main__parrafo {
+                font-size: 1rem;
+                line-height: 2.5;
+                width: 25rem;
+                padding-left: 60px;
+            }
+    
+            .download-button {
+                padding-left: 60px;
+               }
+        }
+    
+        .sectionIcon {
+            height: 93%;
+            
+            .div__icons {
+                width: 90%;
+    
+                .div__hijo-icons {
+                    .iconSkill {
+                        width: 4.5rem;
+                        height: 4.5rem;
+                    }
+    
+                    .nick__icon {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            }
+        }
+}
+
+@media (max-width: 768px) {
+
+/* 
+----Acerca-de-mi---768px----
+*/
+
+.main__Acerca-de-mi {
+
+    .section__sobre-mi {
+        height: 79vh;
+
+        .main__parrafo {
+            width: 17rem;
+        }
+
+        .download-button {
+            font-size: 12px;
+           }
+
+        .docs {
+            min-height: 32px;
+           }
+    }
+
+    .sectionIcon {
+        grid-template-rows: 0.2fr 1fr;
+        height: 79vh;
+
+        .main__titleSkill {
+            font-size: 1.95rem;
+        }
+
+        .div__icons {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            height: 100%;
+            gap: 0px;
+
+            .div__hijo-icons {
+                height: 10vh;
+
+                .iconSkill {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    margin: 0;
+                }
+
+                .nick__icon {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 600px) {
+
+    /* 
+    ----Acerca-de-mi---600px----
+    */
+
+    .main__Acerca-de-mi {
+        .section__sobre-mi {
+            width: 50%;
+
+            .main__title {
+                font-size: 2rem;
+                height: auto;
+                padding-left: 30px;
+            }
+    
+            .main__parrafo {
+                width: 92%;
+                padding-left: 30px;
+            }
+    
+            .download-button {
+                font-size: 10px;
+                padding-left: 30px;
+               }
+        }
+    
+        .sectionIcon {
+            height: 79vh;
+            width: 50%;
+
+            .main__titleSkill {
+                font-size: 2rem;
+            }
+            
+            .div__icons {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                height: 60vh;
+    
+                .div__hijo-icons {
+                    .iconSkill {
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        margin: 0;
+                    }
+    
+                    .nick__icon {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+            }
+        }
+}
+
+@media (max-width: 480px) {
+
+    /* 
+    ----Acerca-de-mi---480px----
+    */
+
+    .main__Acerca-de-mi {
+        height: 79vh;
+
+        .section__sobre-mi {
+            height: 40%;
+            width: 100%;
+            margin: 0;
+
+            .main__title {
+                font-size: 1.5rem;
+                height: 40px;
+                text-align: center;
+                padding: 0px;
+            }
+    
+            .main__parrafo {
+                font-size: 0.8rem;
+                width: 100%;
+                text-align: center;
+                padding: 0 15px;
+            }
+    
+            .download-button {
+                font-size: 9px;
+                padding: 5px 0 0 0;
+                align-self: center;
+               }
+        }
+    
+        .sectionIcon {
+            height: 60%;
+            width: 100%;
+            gap: 20px;
+
+            .main__titleSkill {
+                font-size: 1.8rem;
+            }
+            
+            .div__icons {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                width: 75%;
+                height: auto;
+
+                .div__hijo-icons {
+                    .iconSkill {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+            }
+            }
+        }
+}
+
+
+@media (max-width: 320px) {
+
+    /* 
+    ----Acerca-de-mi---320px----
+    */
+
+    .main__Acerca-de-mi {
+
+        .section__sobre-mi {
+            height: 50%;
+
+            .main__title {
+                font-size: 1.2rem;
+                height: 40px;
+                padding: 0 10px;
+            }
+    
+            .main__parrafo {
+                font-size: 0.7rem;
+                text-align: center;
+                width: 100%;
+                padding: 0 10px;
+            }
+    
+            .download-button {
+                font-size: 10px;
+                padding-top: 20px;
+               }
+        }
+    
+        .sectionIcon {
+            height: 50%;
+            
+            .div__icons {
+                height: 20vh;
+
+                .div__hijo-icons {
+                    .iconSkill {
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        margin: 0;
+                    }
+                }
+            }
+            }
+        }
+}
