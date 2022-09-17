@@ -14,6 +14,7 @@
     height: 79vh;
     justify-content: space-around;
     justify-items: center;
+    align-items: center;
 
     .title__contacto {
         font-weight: bold;
@@ -25,13 +26,14 @@
     .card {
         display: grid;
         width: 325px;
-        height: 470px;
-        background: rgba(178, 180, 184, 0.418);
+        height: auto;
+        background: map-get($redes, random);
         border: 1px solid white;
         grid-area: formulario;
         z-index: 0;
 
         .card-body {
+
             .redes-container {
                 display: flex;
                 align-items: center;
@@ -52,31 +54,15 @@
                     }
                 }
 
-                .linkedin {
-                    transition: all 0.3s;
-            
-                    &:hover {
-                        font-size: 28px;
-                        color: #0077B5;
-                    } 
-                }
-                
-                .twitter {
-                    transition: all 0.3s;
-            
-                    &:hover {
-                        font-size: 28px;
-                        color: #55acee;
-                    } 
-                }
-                
-                .github {
-                    transition: all 0.3s;
-            
-                    &:hover {
-                        font-size: 28px;
-                        color: #690092;
-                    } 
+                @each $redsocial, $colordered in $redes {
+                    .#{$redsocial} {
+                        transition: all 0.3s;
+                            
+                            &:hover {
+                                font-size: 28px;
+                                color: $colordered;
+                             } 
+                    }
                 }
             }
 
@@ -135,7 +121,8 @@
                      transform: translateY(-0.1em);
                     }
                    }
-               }
+               
+            }
         }
     }
 

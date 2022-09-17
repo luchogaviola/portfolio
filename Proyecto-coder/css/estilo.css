@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.main__Proyectos .section__proyectos .div__clima .main__Clima, .main__Proyectos .section__proyectos .div__calcu .main__Calculadora {
+  width: 200px;
+  height: 400px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -282,25 +287,18 @@ button:active {
 .main__Proyectos .main__title-proyect {
   font-weight: bold;
   font-size: 3rem;
-  align-self: center;
   text-align: center;
 }
 .main__Proyectos .section__proyectos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
-  width: 950px;
   font-family: "Roboto", sans-serif;
   gap: 50px;
 }
 .main__Proyectos .section__proyectos .div__calcu {
   display: flex;
   align-self: center;
-  width: 445px;
-}
-.main__Proyectos .section__proyectos .div__calcu .main__Calculadora {
-  width: 200px;
-  height: 400px;
 }
 .main__Proyectos .section__proyectos .div__calcu .section__textoCalcu {
   height: 30vh;
@@ -325,10 +323,6 @@ button:active {
   display: flex;
   align-self: center;
   width: 445px;
-}
-.main__Proyectos .section__proyectos .div__clima .main__Clima {
-  width: 200px;
-  height: 400px;
 }
 .main__Proyectos .section__proyectos .div__clima .section__textoCalcu {
   height: 38vh;
@@ -424,6 +418,7 @@ button:active {
   height: 79vh;
   justify-content: space-around;
   justify-items: center;
+  align-items: center;
 }
 .main__contact .title__contacto {
   font-weight: bold;
@@ -434,7 +429,7 @@ button:active {
 .main__contact .card {
   display: grid;
   width: 325px;
-  height: 470px;
+  height: auto;
   background: rgba(178, 180, 184, 0.418);
   border: 1px solid white;
   grid-area: formulario;
@@ -478,6 +473,13 @@ button:active {
 .main__contact .card .card-body .redes-container .github:hover {
   font-size: 28px;
   color: #690092;
+}
+.main__contact .card .card-body .redes-container .random {
+  transition: all 0.3s;
+}
+.main__contact .card .card-body .redes-container .random:hover {
+  font-size: 28px;
+  color: rgba(178, 180, 184, 0.418);
 }
 .main__contact .card .card-body .form-outline {
   padding-bottom: 10px;
@@ -726,88 +728,6 @@ button:active {
   /* 
   ----Acerca-de-mi---768px----
   */
-  .main__Acerca-de-mi .section__sobre-mi {
-    height: 79vh;
-  }
-  .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
-    width: 17rem;
-  }
-  .main__Acerca-de-mi .section__sobre-mi .download-button {
-    font-size: 12px;
-  }
-  .main__Acerca-de-mi .section__sobre-mi .docs {
-    min-height: 32px;
-  }
-  .main__Acerca-de-mi .sectionIcon {
-    grid-template-rows: 0.2fr 1fr;
-    height: 79vh;
-  }
-  .main__Acerca-de-mi .sectionIcon .main__titleSkill {
-    font-size: 1.95rem;
-  }
-  .main__Acerca-de-mi .sectionIcon .div__icons {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    height: 100%;
-    gap: 0px;
-  }
-  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons {
-    height: 10vh;
-  }
-  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
-    width: 3.2rem;
-    height: 3.2rem;
-    margin: 0;
-  }
-  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .nick__icon {
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 600px) {
-  /* 
-  ----Acerca-de-mi---600px----
-  */
-  .main__Acerca-de-mi .section__sobre-mi {
-    width: 50%;
-  }
-  .main__Acerca-de-mi .section__sobre-mi .main__title {
-    font-size: 2rem;
-    height: auto;
-    padding-left: 30px;
-  }
-  .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
-    width: 92%;
-    padding-left: 30px;
-  }
-  .main__Acerca-de-mi .section__sobre-mi .download-button {
-    font-size: 10px;
-    padding-left: 30px;
-  }
-  .main__Acerca-de-mi .sectionIcon {
-    height: 79vh;
-    width: 50%;
-  }
-  .main__Acerca-de-mi .sectionIcon .main__titleSkill {
-    font-size: 2rem;
-  }
-  .main__Acerca-de-mi .sectionIcon .div__icons {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    height: 60vh;
-  }
-  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
-    width: 3.2rem;
-    height: 3.2rem;
-    margin: 0;
-  }
-  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .nick__icon {
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 480px) {
-  /* 
-  ----Acerca-de-mi---480px----
-  */
   .main__Acerca-de-mi {
     height: 79vh;
   }
@@ -817,16 +737,17 @@ button:active {
     margin: 0;
   }
   .main__Acerca-de-mi .section__sobre-mi .main__title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     height: 40px;
     text-align: center;
     padding: 0px;
   }
   .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
     font-size: 0.8rem;
-    width: 100%;
+    width: 80%;
     text-align: center;
-    padding: 0 15px;
+    align-self: center;
+    padding: 8px 15px;
   }
   .main__Acerca-de-mi .section__sobre-mi .download-button {
     font-size: 9px;
@@ -845,12 +766,73 @@ button:active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 75%;
+    width: 68%;
     height: auto;
   }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons {
+    height: 10vh;
+  }
   .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
-    width: 4rem;
-    height: 4rem;
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+}
+@media (max-width: 600px) {
+  /* 
+  ----Acerca-de-mi---600px----
+  */
+  .main__Acerca-de-mi .section__sobre-mi .main__title {
+    font-size: 1.7rem;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
+    width: 85%;
+  }
+  .main__Acerca-de-mi .sectionIcon {
+    height: 55%;
+  }
+  .main__Acerca-de-mi .sectionIcon .main__titleSkill {
+    font-size: 1.7rem;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons {
+    width: 70%;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons {
+    height: 9vh;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+@media (max-width: 480px) {
+  /* 
+  ----Acerca-de-mi---480px----
+  */
+  .main__Acerca-de-mi .section__sobre-mi {
+    height: 45%;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__title {
+    font-size: 1.6rem;
+  }
+  .main__Acerca-de-mi .section__sobre-mi .main__parrafo {
+    font-size: 0.79rem;
+    width: 95.2%;
+  }
+  .main__Acerca-de-mi .sectionIcon .main__titleSkill {
+    font-size: 1.6rem;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons {
+    width: 90%;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons {
+    height: 8vh;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .nick__icon {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 320px) {
@@ -858,10 +840,9 @@ button:active {
   ----Acerca-de-mi---320px----
   */
   .main__Acerca-de-mi .section__sobre-mi {
-    height: 50%;
+    height: auto;
   }
   .main__Acerca-de-mi .section__sobre-mi .main__title {
-    font-size: 1.2rem;
     height: 40px;
     padding: 0 10px;
   }
@@ -879,7 +860,7 @@ button:active {
     height: 50%;
   }
   .main__Acerca-de-mi .sectionIcon .div__icons {
-    height: 20vh;
+    height: 40vh;
   }
   .main__Acerca-de-mi .sectionIcon .div__icons .div__hijo-icons .iconSkill {
     width: 3.2rem;
@@ -923,6 +904,7 @@ button:active {
   }
   .main__Proyectos .section__proyectos .div__clima {
     width: 370px;
+    height: 300px;
   }
   .main__Proyectos .section__proyectos .div__clima .main__Clima {
     width: 160px;
@@ -1074,7 +1056,6 @@ button:active {
   }
   .main__contact .card {
     width: 280px;
-    height: 422px;
   }
   .main__contact .card .card-body .redes-container {
     height: 7vh;

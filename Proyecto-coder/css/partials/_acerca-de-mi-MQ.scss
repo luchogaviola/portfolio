@@ -52,53 +52,61 @@
 */
 
 .main__Acerca-de-mi {
+    height: 79vh;
 
     .section__sobre-mi {
-        height: 79vh;
+        height: 40%;
+        width: 100%;
+        margin: 0;
+
+        .main__title {
+            font-size: 1.8rem;
+            height: 40px;
+            text-align: center;
+            padding: 0px;
+        }
 
         .main__parrafo {
-            width: 17rem;
+            font-size: 0.8rem;
+            width: 80%;
+            text-align: center;
+            align-self: center;
+            padding: 8px 15px;
         }
 
         .download-button {
-            font-size: 12px;
-           }
-
-        .docs {
-            min-height: 32px;
+            font-size: 9px;
+            padding: 5px 0 0 0;
+            align-self: center;
            }
     }
 
     .sectionIcon {
-        grid-template-rows: 0.2fr 1fr;
-        height: 79vh;
+        height: 60%;
+        width: 100%;
+        gap: 20px;
 
         .main__titleSkill {
-            font-size: 1.95rem;
+            font-size: 1.8rem;
         }
-
+        
         .div__icons {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            height: 100%;
-            gap: 0px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 68%;
+            height: auto;
 
             .div__hijo-icons {
                 height: 10vh;
-
                 .iconSkill {
-                    width: 3.2rem;
-                    height: 3.2rem;
-                    margin: 0;
-                }
-
-                .nick__icon {
-                    font-size: 0.9rem;
+                    width: 3.7rem;
+                    height: 3.7rem;
                 }
             }
         }
+        }
     }
-}
 }
 
 @media (max-width: 600px) {
@@ -109,52 +117,37 @@
 
     .main__Acerca-de-mi {
         .section__sobre-mi {
-            width: 50%;
 
             .main__title {
-                font-size: 2rem;
-                height: auto;
-                padding-left: 30px;
+                font-size: 1.7rem;
             }
-    
-            .main__parrafo {
-                width: 92%;
-                padding-left: 30px;
-            }
-    
-            .download-button {
-                font-size: 10px;
-                padding-left: 30px;
-               }
-        }
-    
-        .sectionIcon {
-            height: 79vh;
-            width: 50%;
 
+            .main__parrafo {
+                width: 85%;
+            }
+        }
+
+        .sectionIcon {
+            height: 55%;
+    
             .main__titleSkill {
-                font-size: 2rem;
+                font-size: 1.7rem;
             }
             
             .div__icons {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(4, 1fr);
-                height: 60vh;
+                width: 70%;
     
                 .div__hijo-icons {
+                    height: 9vh;
                     .iconSkill {
-                        width: 3.2rem;
-                        height: 3.2rem;
-                        margin: 0;
-                    }
-    
-                    .nick__icon {
-                        font-size: 0.9rem;
+                        width: 3.5rem;
+                        height: 3.5rem;
                     }
                 }
             }
             }
-        }
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -164,59 +157,41 @@
     */
 
     .main__Acerca-de-mi {
-        height: 79vh;
-
         .section__sobre-mi {
-            height: 40%;
-            width: 100%;
-            margin: 0;
-
+           height: 45%;
             .main__title {
-                font-size: 1.5rem;
-                height: 40px;
-                text-align: center;
-                padding: 0px;
+                font-size: 1.6rem;
             }
-    
-            .main__parrafo {
-                font-size: 0.8rem;
-                width: 100%;
-                text-align: center;
-                padding: 0 15px;
-            }
-    
-            .download-button {
-                font-size: 9px;
-                padding: 5px 0 0 0;
-                align-self: center;
-               }
-        }
-    
-        .sectionIcon {
-            height: 60%;
-            width: 100%;
-            gap: 20px;
 
+            .main__parrafo {
+                font-size: 0.79rem;
+                width: 95.2%;
+            }
+        }
+
+        .sectionIcon {
             .main__titleSkill {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
             
             .div__icons {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                width: 75%;
-                height: auto;
-
+                width: 90%;
+    
                 .div__hijo-icons {
+                    height: 8vh;
                     .iconSkill {
-                        width: 4rem;
-                        height: 4rem;
+                        width: 3.2rem;
+                        height: 3.2rem;
+                    }
+
+                    .nick__icon {
+                        font-size: 0.8rem;
                     }
                 }
             }
             }
-        }
+    }
+
 }
 
 
@@ -229,10 +204,8 @@
     .main__Acerca-de-mi {
 
         .section__sobre-mi {
-            height: 50%;
-
+            height: auto;
             .main__title {
-                font-size: 1.2rem;
                 height: 40px;
                 padding: 0 10px;
             }
@@ -254,7 +227,7 @@
             height: 50%;
             
             .div__icons {
-                height: 20vh;
+                height: 40vh;
 
                 .div__hijo-icons {
                     .iconSkill {

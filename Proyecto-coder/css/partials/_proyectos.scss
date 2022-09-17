@@ -5,9 +5,7 @@
 */
 
 .main__Proyectos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 80%;
+    @include grid(1fr, 20% 80%);
     align-items: center;
     justify-items: center;
     height: 79vh;
@@ -15,7 +13,6 @@
     .main__title-proyect {
         font-weight: bold;
         font-size: 3rem;
-        align-self: center;
         text-align: center;
     }
 
@@ -23,18 +20,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-around;
-        width: 950px;
         font-family: $fontRoboto;
         gap: 50px;
 
         .div__calcu {
             display: flex;
             align-self: center;
-            width: 445px;
 
             .main__Calculadora {
-                width: 200px;
-                height: 400px;
+                @extend %proyects;
             }
             
             .section__textoCalcu {
@@ -67,8 +61,7 @@
             width: 445px;
 
             .main__Clima {
-                width: 200px;
-                height: 400px;
+                @extend %proyects;
             }
 
             .section__textoCalcu {
