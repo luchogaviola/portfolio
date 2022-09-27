@@ -7,7 +7,7 @@
 .main__experiencia {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 19% 81%;
     align-items: center;
     justify-items: center;
     height: 79vh;
@@ -15,35 +15,42 @@
     .title__experiencia {
         font-weight: bold;
         font-size: 3rem;
-        align-self: center;
+        align-self: flex-end;
     }
 
     .main__section {
         display: flex;
         flex-flow: row wrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-evenly;
-        width: auto;
-        gap: 100px;
+        gap: 200px;
         font-family: $fontRoboto;
+        padding-top: 45px;
 
         .section__div-unlam {
             display: flex;
             flex-direction: column;
             align-items: center;
+            font-family: $fontRoboto;
 
             .div__img-unlam {
-                width: 380px;
-                height: 280px;
+                width: 340px;
+                height: 220px;
                 text-align: center;
             }
             
             .div__p-unlam {
-                width: 250px;
+                width: 300px;
                 text-align: center;
                 line-height: 23px;
-                font-size: 15.9px;
+                font-size: 18px;
                 margin-top: 12px;
+            }
+
+            .parrafo__coder {
+                text-align: center;
+                font-size: 14.5px;
+                width: 310px;
             }
         }
 
@@ -52,17 +59,25 @@
             flex-direction: column;
             text-align: center;
             align-items: center;
-            height: 353px;
 
             .div__img-coder {
-                width: 380px;
-                height: 280px;
+                width: 340px;
+                height: 220px;
             }
             
             .div__p-coder {
                 text-align: center;
-                font-size: 17.3px;
+                font-size: 18px;
                 margin-top: 12px;
+                width: 400px;
+                font-family: $fontRoboto;
+            }
+
+            .parrafo__coder {
+                text-align: start;
+                font-size: 14.5px;
+                width: 400px;
+                font-family: $fontRoboto;
             }
         }
     }

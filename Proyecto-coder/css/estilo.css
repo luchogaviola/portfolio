@@ -172,6 +172,10 @@
   border-radius: 4px;
   background-color: #242a35;
 }
+.main__Acerca-de-mi .section__sobre-mi .download-button .div__button .cv__pdf {
+  text-decoration: none;
+  color: white;
+}
 .main__Acerca-de-mi .sectionIcon {
   display: grid;
   grid-template-rows: 0.35fr 1fr;
@@ -322,7 +326,7 @@ button:active {
 .main__Proyectos .section__proyectos .div__clima {
   display: flex;
   align-self: center;
-  width: 445px;
+  height: 400px;
 }
 .main__Proyectos .section__proyectos .div__clima .section__textoCalcu {
   height: 38vh;
@@ -352,7 +356,7 @@ button:active {
 .main__experiencia {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 25% 75%;
+  grid-template-rows: 19% 81%;
   align-items: center;
   justify-items: center;
   height: 79vh;
@@ -360,49 +364,62 @@ button:active {
 .main__experiencia .title__experiencia {
   font-weight: bold;
   font-size: 3rem;
-  align-self: center;
+  align-self: flex-end;
 }
 .main__experiencia .main__section {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
-  width: auto;
-  gap: 100px;
+  gap: 200px;
   font-family: "Roboto", sans-serif;
+  padding-top: 45px;
 }
 .main__experiencia .main__section .section__div-unlam {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Roboto", sans-serif;
 }
 .main__experiencia .main__section .section__div-unlam .div__img-unlam {
-  width: 380px;
-  height: 280px;
+  width: 340px;
+  height: 220px;
   text-align: center;
 }
 .main__experiencia .main__section .section__div-unlam .div__p-unlam {
-  width: 250px;
+  width: 300px;
   text-align: center;
   line-height: 23px;
-  font-size: 15.9px;
+  font-size: 18px;
   margin-top: 12px;
+}
+.main__experiencia .main__section .section__div-unlam .parrafo__coder {
+  text-align: center;
+  font-size: 14.5px;
+  width: 310px;
 }
 .main__experiencia .main__section .section__div-coder {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 353px;
 }
 .main__experiencia .main__section .section__div-coder .div__img-coder {
-  width: 380px;
-  height: 280px;
+  width: 340px;
+  height: 220px;
 }
 .main__experiencia .main__section .section__div-coder .div__p-coder {
   text-align: center;
-  font-size: 17.3px;
+  font-size: 18px;
   margin-top: 12px;
+  width: 400px;
+  font-family: "Roboto", sans-serif;
+}
+.main__experiencia .main__section .section__div-coder .parrafo__coder {
+  text-align: start;
+  font-size: 14.5px;
+  width: 400px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* 
@@ -989,18 +1006,29 @@ button:active {
   }
   .main__experiencia .main__section .section__div-unlam .div__img-unlam {
     width: 320px;
-    height: 220px;
+    height: 200px;
   }
   .main__experiencia .main__section .section__div-unlam .div__p-unlam {
     width: 250px;
-    font-size: 15.9px;
+    font-size: 15px;
+  }
+  .main__experiencia .main__section .section__div-unlam .parrafo__coder {
+    font-size: 11.5px;
   }
   .main__experiencia .main__section .section__div-coder {
-    height: 278px;
+    width: 320px;
   }
   .main__experiencia .main__section .section__div-coder .div__img-coder {
     width: 320px;
-    height: 220px;
+    height: 200px;
+  }
+  .main__experiencia .main__section .section__div-coder .div__p-coder {
+    font-size: 15px;
+    width: auto;
+  }
+  .main__experiencia .main__section .section__div-coder .parrafo__coder {
+    font-size: 11.5px;
+    width: 330px;
   }
 }
 @media (max-width: 768px) {
@@ -1023,7 +1051,7 @@ button:active {
     justify-content: space-evenly;
     width: auto;
     height: auto;
-    gap: 60px;
+    gap: 20px;
   }
   .main__experiencia .main__section .section__div-unlam .div__img-unlam {
     width: 220px;
@@ -1041,6 +1069,9 @@ button:active {
   }
   .main__experiencia .main__section .section__div-coder .div__p-coder {
     font-size: 14px;
+  }
+  .main__experiencia .main__section .section__div-coder .parrafo__coder {
+    text-align: center;
   }
 }
 @media (max-width: 1024px) {

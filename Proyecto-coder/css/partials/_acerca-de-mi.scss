@@ -48,7 +48,12 @@
                 min-height: 40px;
                 padding: 0 10px;
                 border-radius: 4px;
-                background-color: #242a35;                
+                background-color: #242a35;  
+                
+                .cv__pdf {
+                    text-decoration: none;
+                    color: white;
+                }
                }
            }
     }
